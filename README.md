@@ -12,7 +12,7 @@ I'm motivated, I've been having kinda bad days but let's try it
 Sure
 
 ```bash
-$ git clone depth=0 https://www.github.com/Its-Yayo/CodeWars-Exxx.git
+$ git clone https://www.github.com/Its-Yayo/CodeWars-Exxx.git
 $ cd CodeWars-Exxx
 ```
 
