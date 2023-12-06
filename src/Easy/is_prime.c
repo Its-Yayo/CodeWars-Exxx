@@ -16,6 +16,7 @@ Example
     is_prime(-1)  // False  */
 
 #include <stdbool.h>
+#include <stdio.h>
 #include <math.h>
 
 bool is_prime(int num) {
@@ -27,3 +28,11 @@ bool is_prime(int num) {
     }
   }
   return true;
+}
+
+ int main(int argc, char* argv[]) {
+   int num = 4;
+   printf("%i\n", is_prime(num));
+
+   return 0;
+ }
