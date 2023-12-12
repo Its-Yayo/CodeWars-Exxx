@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def find_missing_letter(chars: list[str]) -> str:
     # Init approach will take all the ASCII int values
     # It will transverse from start to end the sum of all the elements
