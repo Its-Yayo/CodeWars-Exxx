@@ -6,7 +6,7 @@ I'll compute some exercises taken from [codewars](https://www.codewars.com/dashb
 .cpp, .c, .js, .py or any other file, I'll type in the exercises. 
 
 ## Why this x2?
-I'm motivated, I've been having bad days but let's try it
+It's like a therapy for me for my purpuse/eternity path :))
 
 ## Clone it?
 Sure
