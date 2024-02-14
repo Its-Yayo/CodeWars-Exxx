@@ -17,7 +17,7 @@ Example:
 
 """
 
-def alphabet_position(text):
+def alphabet_position(text: str) -> str:
     letters = text.lower()
     result = []
 
