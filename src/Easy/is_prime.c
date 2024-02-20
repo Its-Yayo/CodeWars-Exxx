@@ -1,4 +1,4 @@
-// is_prime.c
+
 
 /*
 Instructions:
