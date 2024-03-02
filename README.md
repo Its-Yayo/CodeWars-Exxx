@@ -8,7 +8,7 @@ I'll compute some exercises taken from [codewars](https://www.codewars.com/dashb
 Exercises will be categorized as Easy (8 kyu to 5 kyu), Medium (4 kyu to 2 kyu) and Hard (1 dan...)
 
 ## Why this x2?
-It's like a therapy for me for my purpuse/eternity path :))
+It's like a therapy for me for pursuing purpuse/eternity path :))
 
 ## Clone it?
 Sure
