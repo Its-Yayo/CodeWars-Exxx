@@ -37,17 +37,18 @@ def path_finder(maze: list[list[str]]) -> bool:
             return True
         
         north = [cell[0], cell[1] + 1]
-        south = [cell[0] + 1, cell[1]]
-        east = [cell[0], cell[1] - 1]
+        south = [cell[0], cell[1] - 1]
+        east = [cell[0] + 1, cell[1]]
         west = [cell[0] - 1, cell[1]]
 
         
         for next in [north, south, east, west]:
-            if not visited[cell[0]][cell[1]] and maze[next[0][next[1]]] != 'W' and 0 <= next[0] < r and 0 <= next[1] < c:
+            if not visited[next[0]][next[1]] and maze[next[0]][next[1]] != 'W' and 0 <= next[0] < r and 0 <= next[1] < c:
                 visited[next[0]][next[1]] = True 
                 queue.append(next)
                 
-                if next[0] == r - 1 and maze[next[0][next[1]]]:
+                if next[0] == r - 1 and maze[next[0]][next[1]] != 'W':
                     return True
-    
+
     return False
+
