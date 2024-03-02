@@ -21,9 +21,10 @@ def path_finder(maze: list[list[str]]) -> bool:
     """ I'll use BFS as a fast approach to find the shortest path 
         in order to exit position [N-1, N-1] 
         
-        To avoid unhashable error, I'm tracking a new list with visited cells """
+        To avoid an unhashable type error, I'm tracking a new list with visited cells """
     
     start = [0, 0]
+    maze = maze.split("\n")
     r, c = len(maze), len(maze[0])
     visited = [[False for _ in range(c)] for _ in range(r)]
     queue = deque([start])
@@ -32,6 +33,9 @@ def path_finder(maze: list[list[str]]) -> bool:
         cell = queue.popleft()
         visited[cell[0]][cell[1]] = True
         
+        if cell == [r - 1, c - 1]:
+            return True
+        
         north = [cell[0], cell[1] + 1]
         south = [cell[0] + 1, cell[1]]
         east = [cell[0], cell[1] - 1]
@@ -39,11 +43,11 @@ def path_finder(maze: list[list[str]]) -> bool:
 
         
         for next in [north, south, east, west]:
-            if not visited[cell[0]][cell[1]] and next != 'W' and 0 <= next[0] < r and 0 <= next[1] < c:
+            if not visited[cell[0]][cell[1]] and maze[next[0][next[1]]] != 'W' and 0 <= next[0] < r and 0 <= next[1] < c:
                 visited[next[0]][next[1]] = True 
                 queue.append(next)
                 
-                # FIXME: Check logic for true exits
+                if next[0] == r - 1 and maze[next[0][next[1]]]:
+                    return True
     
     return False
-        
