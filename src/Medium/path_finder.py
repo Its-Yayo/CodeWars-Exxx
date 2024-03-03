@@ -50,5 +50,6 @@ def path_finder(maze: list[list[str]]) -> bool:
                 if next[0] == r - 1 and maze[next[0]][next[1]] != 'W':
                     return True
 
+
     return False
 
