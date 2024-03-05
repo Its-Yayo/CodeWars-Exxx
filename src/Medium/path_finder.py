@@ -17,6 +17,7 @@ Start and exit positions are empty in all test cases.
 from collections import deque
 
 
+# FIXME 1: Check last init test in CodeWars lmao
 def path_finder(maze: list[list[str]]) -> bool:
     """ I'll use BFS as a fast approach to find the shortest path 
         in order to exit position [N-1, N-1] 
