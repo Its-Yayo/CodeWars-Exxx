@@ -53,5 +53,5 @@ def path_finder(maze: list[list[str]]) -> bool:
                     
     return False
     
-    # It's not done yetttttt
+    # It's not done yetttttt, it runs 3 out of 4 testsssss
 
